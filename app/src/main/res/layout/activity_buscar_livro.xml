@@ -37,6 +37,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/titulo"
                 android:textColor="@color/black"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:visibility="gone"/>
 
@@ -46,6 +47,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/autor"
                 android:textColor="@color/black"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:visibility="gone"/>
 
@@ -55,6 +57,7 @@
                 android:layout_height="wrap_content"
                 android:text="Ano:"
                 android:textColor="@color/black"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:visibility="gone"/>
 
@@ -64,6 +67,7 @@
                 android:layout_height="wrap_content"
                 android:text="Nota:"
                 android:textColor="@color/black"
+                android:textSize="18sp"
                 android:textStyle="bold"
                 android:visibility="gone"/>
 
@@ -73,35 +77,39 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_marginLeft="10sp">
+            android:layout_marginLeft="5sp">
 
             <TextView
                 android:id="@+id/titulo2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/autor2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/ano2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/nota2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text=""
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="18sp" />
 
         </LinearLayout>
 

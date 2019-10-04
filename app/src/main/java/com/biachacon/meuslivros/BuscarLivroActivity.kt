@@ -30,9 +30,9 @@ class BuscarLivroActivity : AppCompatActivity() {
         var livros = db.livroDao().listAll()
         livros.forEach { Log.i("APPROOM", it.toString()) }
 
-        for (i in 0 until  livros.size){
+        /*for (i in 0 until  livros.size){
             titulos[i] = livros[i].titulo
-        }
+        }*/
 
         var livroToListAdapter = ArrayAdapter<String>(
             this,
