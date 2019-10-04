@@ -9,7 +9,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    val CODE = 99
+    val CODESALVA = 99
+    val CODEDELETE = 100
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         cadastrarBt.setOnClickListener {
             var i = Intent(this, CadastrarLivrosActivity::class.java)
-            startActivityForResult(i,CODE)
+            startActivityForResult(i,CODESALVA)
         }
 
         listarBt.setOnClickListener {
@@ -30,18 +31,33 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        deletarBt.setOnClickListener {
+            var i = Intent(this, DeletarLivrosActivity::class.java)
+            startActivityForResult(i,CODEDELETE)
+        }
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         when(requestCode){
-            CODE ->{
+            CODESALVA ->{
                 when(resultCode){
                     Activity.RESULT_OK->{
                         Toast.makeText(this, R.string.livro_salvo, Toast.LENGTH_SHORT).show()
                     }
                     Activity.RESULT_CANCELED->{
-                        Toast.makeText(this, R.string.cadastro_cancelado , Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, R.string.cancelado , Toast.LENGTH_SHORT).show()
+                    }
+                }
+            }
+            CODEDELETE ->{
+                when(resultCode){
+                    Activity.RESULT_OK->{
+                        Toast.makeText(this, R.string.livro_deletado, Toast.LENGTH_SHORT).show()
+                    }
+                    Activity.RESULT_CANCELED->{
+                        Toast.makeText(this, R.string.cancelado , Toast.LENGTH_SHORT).show()
                     }
                 }
             }
