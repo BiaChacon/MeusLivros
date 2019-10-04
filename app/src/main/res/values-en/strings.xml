@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">My Books</string>
+    <string name="app_name">My books</string>
     <string name="ano">Year:</string>
     <string name="autor">Author:</string>
     <string name="cadastro_cancelado">Registration canceled</string>

@@ -28,7 +28,9 @@ class ListarLivrosActivity : AppCompatActivity() {
         livros.forEach { Log.i("APPROOM", it.toString()) }
 
         fun alterarDados(){
+
             Log.i("livro", livroAtual.toString())
+
 
             anterior.visibility = View.VISIBLE
             proximo.visibility = View.VISIBLE
@@ -38,6 +40,7 @@ class ListarLivrosActivity : AppCompatActivity() {
 
             if (livroAtual == livros.size-1)
                 proximo.visibility = View.INVISIBLE
+
 
             titulo.setText(livros[livroAtual].titulo)
             autor.setText(livros[livroAtual].autor)
@@ -74,14 +77,17 @@ class ListarLivrosActivity : AppCompatActivity() {
     }
 
     fun semLivro(){
+
         titulo.visibility = View.INVISIBLE
         autor.visibility = View.INVISIBLE
         ano.visibility = View.INVISIBLE
         nota.visibility = View.INVISIBLE
+
         textView10.visibility = View.INVISIBLE
         textView9.visibility = View.INVISIBLE
         textView7.visibility = View.INVISIBLE
         textView5.visibility = View.INVISIBLE
+
     }
 
 }
