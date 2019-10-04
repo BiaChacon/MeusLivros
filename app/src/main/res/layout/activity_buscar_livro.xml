@@ -22,14 +22,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:gravity="center">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="right">
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/tv1"
@@ -39,45 +39,8 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:visibility="gone"/>
-
-            <TextView
-                android:id="@+id/tv2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/autor"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:visibility="gone"/>
-
-            <TextView
-                android:id="@+id/tv3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ano:"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:visibility="gone"/>
-
-            <TextView
-                android:id="@+id/tv4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Nota:"
-                android:textColor="@color/black"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:visibility="gone"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="5sp">
+                android:visibility="gone"
+                android:layout_marginRight="5sp"/>
 
             <TextView
                 android:id="@+id/titulo2"
@@ -87,6 +50,24 @@
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/autor"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_marginRight="5sp"/>
+
             <TextView
                 android:id="@+id/autor2"
                 android:layout_width="wrap_content"
@@ -95,6 +76,24 @@
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ano:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_marginRight="5sp"/>
+
             <TextView
                 android:id="@+id/ano2"
                 android:layout_width="wrap_content"
@@ -102,6 +101,23 @@
                 android:text=""
                 android:textColor="@color/black"
                 android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nota:"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_marginRight="5sp"/>
 
             <TextView
                 android:id="@+id/nota2"
@@ -110,9 +126,7 @@
                 android:text=""
                 android:textColor="@color/black"
                 android:textSize="18sp" />
-
         </LinearLayout>
-
     </LinearLayout>
 
 </LinearLayout>

@@ -21,8 +21,6 @@ class BuscarLivroActivity : AppCompatActivity() {
             .build()
     }
 
-    var titulos = arrayOf<String>()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_buscar_livro)
@@ -30,9 +28,13 @@ class BuscarLivroActivity : AppCompatActivity() {
         var livros = db.livroDao().listAll()
         livros.forEach { Log.i("APPROOM", it.toString()) }
 
-        /*for (i in 0 until  livros.size){
+        var size = livros.size
+
+        var titulos = Array<String>(size, {i -> i.toString()})
+
+        for (i in 0 until  livros.size){
             titulos[i] = livros[i].titulo
-        }*/
+        }
 
         var livroToListAdapter = ArrayAdapter<String>(
             this,
@@ -43,11 +45,7 @@ class BuscarLivroActivity : AppCompatActivity() {
 
         autocomplete.setOnItemClickListener { adapterView, view, i, l ->
             var selected = adapterView.getItemAtPosition(i)
-
-            Toast.makeText(this, "$selected $l", Toast.LENGTH_SHORT).show()
-
             mostrarLivro(db.livroDao().findByName(selected.toString()))
-
         }
 
     }
