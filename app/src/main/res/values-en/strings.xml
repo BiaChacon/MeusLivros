@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">My Books</string>
+    <string name="ano">Year:</string>
+    <string name="autor">Author:</string>
+    <string name="cadastro_cancelado">Registration canceled</string>
+    <string name="cancelar">CANCEL</string>
+    <string name="cadastrar_novo">REGISTER NEW</string>
+    <string name="listar_livros">LIST BOOKS</string>
+    <string name="livro_salvo">Saved Book</string>
+    <string name="nenhum_livro_cadastrado">No Registered Books</string>
+    <string name="nota">Note:</string>
+    <string name="salvar">SAVE</string>
+    <string name="titulo">Title:</string>
+    <string name="buscar">SEARCH</string>
+</resources>

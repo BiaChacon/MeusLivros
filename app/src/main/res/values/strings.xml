@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Meus Livros</string>
+    <string name="cadastrar_novo">CADASTRAR NOVO</string>
+    <string name="listar_livros">LISTAR LIVROS</string>
+    <string name="salvar">SALVAR</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="titulo">Título:</string>
+    <string name="autor">Autor:</string>
+    <string name="ano">Ano:</string>
+    <string name="nota">Nota:</string>
+    <string name="livro_salvo">Livro Salvo</string>
+    <string name="cadastro_cancelado">Cadastro cancelado</string>
+    <string name="nenhum_livro_cadastrado">Nenhum Livro Cadastrado</string>
+    <string name="buscar">BUSCAR</string>
+</resources>
