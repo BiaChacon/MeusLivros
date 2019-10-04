@@ -14,4 +14,6 @@
     <string name="nenhum_livro_cadastrado">Nenhum Livro Cadastrado</string>
     <string name="buscar">BUSCAR</string>
     <string name="deletar">DELETAR</string>
+    <string name="proximo">PRÓXIMO</string>
+    <string name="anterior">ANTERIOR</string>
 </resources>

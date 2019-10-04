@@ -93,20 +93,20 @@
 
         <Button
             android:id="@+id/salvarBt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/salvar"
+            android:layout_width="120sp"
+            android:layout_height="40sp"
+            android:layout_marginRight="10sp"
             android:background="@color/colorPrimary"
-            android:textColor="@color/branco"
-            android:layout_marginRight="10sp"/>
+            android:text="@string/salvar"
+            android:textColor="@color/branco" />
 
         <Button
             android:id="@+id/cancelarBt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/cancelar"
+            android:layout_width="120sp"
+            android:layout_height="40sp"
             android:background="@color/colorPrimary"
-            android:textColor="@color/branco"/>
+            android:text="@string/cancelar"
+            android:textColor="@color/branco" />
     </LinearLayout>
 
 

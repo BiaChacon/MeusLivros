@@ -15,4 +15,5 @@
     <string name="cancelado">Canceled</string>
     <string name="livro_deletado">Deleted Book</string>
     <string name="deletar">DELETE</string>
+    <string name="proximo">PRÓXIMO</string>
 </resources>
