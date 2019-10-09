@@ -16,4 +16,5 @@
     <string name="deletar">DELETAR</string>
     <string name="proximo">PRÓXIMO</string>
     <string name="anterior">ANTERIOR</string>
+    <string name="list_view">List View</string>
 </resources>

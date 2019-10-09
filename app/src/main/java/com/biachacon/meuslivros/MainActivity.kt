@@ -36,6 +36,11 @@ class MainActivity : AppCompatActivity() {
             startActivityForResult(i,CODEDELETE)
         }
 
+         listViewBt.setOnClickListener {
+             var i = Intent(this, ListViewActivity::class.java)
+             startActivity(i)
+         }
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

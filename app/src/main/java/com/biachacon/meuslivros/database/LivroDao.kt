@@ -24,4 +24,7 @@ interface LivroDao {
     @Query("SELECT * FROM livro WHERE titulo = :titulo")
     fun findByName (titulo: String) : Livro
 
+    @Query("SELECT * FROM livro")
+    fun list(): List<Livro>
+
 }
