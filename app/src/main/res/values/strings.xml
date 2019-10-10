@@ -17,4 +17,5 @@
     <string name="proximo">PRÓXIMO</string>
     <string name="anterior">ANTERIOR</string>
     <string name="list_view">List View</string>
+    <string name="recycler_view">RECYCLER VIEW</string>
 </resources>

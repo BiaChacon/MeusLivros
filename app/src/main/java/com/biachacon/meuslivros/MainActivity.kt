@@ -41,6 +41,10 @@ class MainActivity : AppCompatActivity() {
              startActivity(i)
          }
 
+         recyclerViewBt.setOnClickListener {
+             var i = Intent(this, RecyclerViewActivity::class.java)
+             startActivity(i)
+         }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
