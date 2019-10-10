@@ -1,6 +1,7 @@
 package com.biachacon.meuslivros.model
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,18 +13,27 @@ class LivroAdapter(var context: Context, var livro: List<Livro>): BaseAdapter(){
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
 
-        var v = LayoutInflater.from(context).inflate(R.layout.livro_layout, parent, false)
-        var nomeLivro = v.findViewById<TextView>(R.id.nomeLivro)
-        var nomeAutor = v.findViewById<TextView>(R.id.nomeAutor)
-        var notaLivro = v.findViewById<TextView>(R.id.notaLivro)
+        var holder:LivroViewHolder
+        var view:View
+
+        if (convertView == null) {
+            Log.i("TESTE", "Inicializou Holder")
+            view = LayoutInflater.from(context).inflate(R.layout.livro_layout, parent, false)
+            holder = LivroViewHolder(view)
+            view.tag = holder
+        }else{
+            view = convertView
+            holder = convertView.tag as LivroViewHolder
+        }
+
 
         var livroAtual = livro.get(position)
 
-        nomeLivro.text = livroAtual.titulo
-        nomeAutor.text = livroAtual.autor
-        notaLivro.text = livroAtual.nota.toString()
+        holder.nomeLivro.text = livroAtual.titulo
+        holder.nomeAutor.text = livroAtual.autor
+        holder.notaLivro.text = livroAtual.nota.toString()
 
-        return v
+        return view
     }
 
     override fun getItem(position: Int): Any {
