@@ -9,7 +9,7 @@ import com.biachacon.meuslivros.R
 class LivroAdapterRV(var c:Context, var livros:List<Livro>) : RecyclerView.Adapter<LivroViewHolderRV>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LivroViewHolderRV {
-        val view = LayoutInflater.from(c).inflate(R.layout.livro_layout, parent, false)
+        val view = LayoutInflater.from(c).inflate(R.layout.livro_card_layout, parent, false)
         return LivroViewHolderRV(view)
 
     }
@@ -24,7 +24,19 @@ class LivroAdapterRV(var c:Context, var livros:List<Livro>) : RecyclerView.Adapt
 
         holder.nomeLivro.text = livroAtual.titulo
         holder.nomeAutor.text = livroAtual.autor
-        holder.notaLivro.text = livroAtual.nota.toString()
+        holder.notaLivro.rating = livroAtual.nota
+        holder.img.setImageResource(livroAtual.img)
+
+        if (livroAtual.bitten){
+            holder.img.setImageResource(R.drawable.lido)
+        }else{
+            holder.img.setImageResource(R.drawable.lendo)
+        }
+
+        holder.img.setOnClickListener {
+            livroAtual.bitten = true
+            notifyItemChanged(position)
+        }
 
     }
 

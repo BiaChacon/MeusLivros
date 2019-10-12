@@ -29,7 +29,8 @@ class CadastrarLivrosActivity : AppCompatActivity() {
                     tituloEdit.text.toString(),
                     autorEdit.text.toString(),
                     anoEdit.text.toString().toInt(),
-                    estrelinha.rating
+                    estrelinha.rating,
+                    R.drawable.lendo
                 )
             )
 
@@ -38,7 +39,8 @@ class CadastrarLivrosActivity : AppCompatActivity() {
                         tituloEdit.text.toString(),
                         autorEdit.text.toString(),
                         anoEdit.text.toString().toInt(),
-                        estrelinha.rating
+                        estrelinha.rating,
+                        R.drawable.lendo
                     ) +"]")
 
             setResult(Activity.RESULT_OK)

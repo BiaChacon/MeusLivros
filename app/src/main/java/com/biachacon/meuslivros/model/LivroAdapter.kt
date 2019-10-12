@@ -31,7 +31,7 @@ class LivroAdapter(var context: Context, var livro: List<Livro>): BaseAdapter(){
 
         holder.nomeLivro.text = livroAtual.titulo
         holder.nomeAutor.text = livroAtual.autor
-        holder.notaLivro.text = livroAtual.nota.toString()
+        holder.notaLivro.rating = livroAtual.nota
 
         return view
     }

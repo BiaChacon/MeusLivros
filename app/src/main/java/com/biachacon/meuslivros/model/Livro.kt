@@ -8,8 +8,10 @@ data class Livro (
     var titulo:String,
     var autor:String,
     var ano:Int,
-    var nota:Float
+    var nota:Float,
+    var img: Int
     ){
+    var bitten: Boolean = false
     @PrimaryKey(autoGenerate = true)
     var id:Int = 0
 }
