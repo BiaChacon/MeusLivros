@@ -11,7 +11,9 @@ import com.biachacon.meuslivros.R
 class LivroAdapterPV(var c: Context, var livros:List<Livro>) : PagerAdapter(){
 
     override fun instantiateItem(container: ViewGroup, position: Int): Any {
+
         val view = LayoutInflater.from(c).inflate(R.layout.livro_inflater_pv, container, false)
+
         val img:ImageView = view.findViewById(R.id.imageLivro)
         img.setImageResource(livros[position].img)
         container.addView(view)
@@ -34,4 +36,5 @@ class LivroAdapterPV(var c: Context, var livros:List<Livro>) : PagerAdapter(){
     override fun getPageTitle(position: Int): CharSequence {
         return livros[position].titulo
     }
+
 }

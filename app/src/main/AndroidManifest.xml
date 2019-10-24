@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".PageViewActivity"></activity>
+        <activity android:name=".SwipeDragDropActivity"></activity>
         <activity android:name=".RecyclerViewActivity" />
         <activity android:name=".ListViewActivity" />
         <activity android:name=".DeletarLivrosActivity" />

@@ -46,6 +46,11 @@ class MainActivity : AppCompatActivity() {
              startActivity(i)
          }
 
+         swipeDragDropBt.setOnClickListener {
+             var i = Intent(this, SwipeDragDropActivity::class.java)
+             startActivity(i)
+        }
+
         pageViewBt.setOnClickListener {
             var i = Intent(this, PageViewActivity::class.java)
             startActivity(i)

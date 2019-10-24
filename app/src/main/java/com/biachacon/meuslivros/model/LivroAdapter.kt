@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import android.widget.TextView
 import com.biachacon.meuslivros.R
 
 class LivroAdapter(var context: Context, var livro: List<Livro>): BaseAdapter(){
@@ -18,7 +17,7 @@ class LivroAdapter(var context: Context, var livro: List<Livro>): BaseAdapter(){
 
         if (convertView == null) {
             Log.i("TESTE", "Inicializou Holder")
-            view = LayoutInflater.from(context).inflate(R.layout.livro_layout, parent, false)
+            view = LayoutInflater.from(context).inflate(R.layout.livro_inflater, parent, false)
             holder = LivroViewHolder(view)
             view.tag = holder
         }else{

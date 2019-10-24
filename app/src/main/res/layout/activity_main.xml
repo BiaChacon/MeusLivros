@@ -11,51 +11,51 @@
 
     <Button
         android:id="@+id/cadastrarBt"
-        android:layout_width="150dp"
+        android:layout_width="175dp"
         android:layout_height="50dp"
-        android:text="@string/cadastrar_novo"
         android:background="@color/colorPrimary"
-        android:textColor="@color/branco"/>
+        android:text="@string/cadastrar_novo"
+        android:textColor="@color/branco" />
 
     <Button
         android:id="@+id/listarBt"
-        android:layout_width="150dp"
+        android:layout_width="175dp"
         android:layout_height="50dp"
         android:layout_marginTop="10sp"
-        android:text="@string/listar_livros"
         android:background="@color/colorPrimary"
-        android:textColor="@color/branco"/>
+        android:text="@string/listar_livros"
+        android:textColor="@color/branco" />
 
     <Button
         android:id="@+id/buscarBt"
-        android:layout_width="150dp"
+        android:layout_width="175dp"
         android:layout_height="50dp"
         android:layout_marginTop="10sp"
-        android:text="@string/buscar"
         android:background="@color/colorPrimary"
-        android:textColor="@color/branco"/>
+        android:text="@string/buscar"
+        android:textColor="@color/branco" />
 
     <Button
         android:id="@+id/deletarBt"
-        android:layout_width="150dp"
+        android:layout_width="175dp"
         android:layout_height="50dp"
         android:layout_marginTop="10sp"
-        android:text="@string/deletar"
         android:background="@color/colorPrimary"
-        android:textColor="@color/branco"/>
+        android:text="@string/deletar"
+        android:textColor="@color/branco" />
 
     <Button
         android:id="@+id/listViewBt"
-        android:layout_width="150dp"
+        android:layout_width="175dp"
         android:layout_height="50dp"
         android:layout_marginTop="10sp"
-        android:text="@string/list_view"
         android:background="@color/colorPrimary"
-        android:textColor="@color/branco"/>
+        android:text="@string/list_view"
+        android:textColor="@color/branco" />
 
     <Button
         android:id="@+id/recyclerViewBt"
-        android:layout_width="150dp"
+        android:layout_width="175dp"
         android:layout_height="50dp"
         android:layout_marginTop="10sp"
         android:background="@color/colorPrimary"
@@ -63,8 +63,18 @@
         android:textColor="@color/branco" />
 
     <Button
+        android:id="@+id/swipeDragDropBt"
+        android:layout_width="175dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10sp"
+        android:background="@color/colorPrimary"
+        android:text="@string/swipe_e_dragdrop"
+        android:textColor="@color/branco" />
+
+
+    <Button
         android:id="@+id/pageViewBt"
-        android:layout_width="150dp"
+        android:layout_width="175dp"
         android:layout_height="50dp"
         android:layout_marginTop="10sp"
         android:background="@color/colorPrimary"

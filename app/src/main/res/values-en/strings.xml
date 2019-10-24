@@ -15,8 +15,10 @@
     <string name="cancelado">Canceled</string>
     <string name="livro_deletado">Deleted Book</string>
     <string name="deletar">DELETE</string>
-    <string name="proximo">PRÓXIMO</string>
+    <string name="proximo">NEXT</string>
     <string name="list_view">List View</string>
     <string name="recycler_view">RECYCLER VIEW</string>
-    <string name="pageview">PageView</string>
+    <string name="pageview">PAGE VIEW</string>
+    <string name="swipe_e_dragdrop">SWIPE AND DRAGDROP</string>
+    <string name="anterior">BACK</string>
 </resources>

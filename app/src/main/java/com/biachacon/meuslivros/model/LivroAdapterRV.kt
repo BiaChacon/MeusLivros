@@ -9,7 +9,7 @@ import com.biachacon.meuslivros.R
 class LivroAdapterRV(var c:Context, var livros:List<Livro>) : RecyclerView.Adapter<LivroViewHolderRV>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LivroViewHolderRV {
-        val view = LayoutInflater.from(c).inflate(R.layout.livro_card_layout, parent, false)
+        val view = LayoutInflater.from(c).inflate(R.layout.livro_card_inflater, parent, false)
         return LivroViewHolderRV(view)
 
     }
