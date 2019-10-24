@@ -18,4 +18,5 @@
     <string name="proximo">PRÓXIMO</string>
     <string name="list_view">List View</string>
     <string name="recycler_view">RECYCLER VIEW</string>
+    <string name="pageview">PageView</string>
 </resources>

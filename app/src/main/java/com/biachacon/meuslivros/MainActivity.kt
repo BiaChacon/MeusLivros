@@ -45,6 +45,12 @@ class MainActivity : AppCompatActivity() {
              var i = Intent(this, RecyclerViewActivity::class.java)
              startActivity(i)
          }
+
+        pageViewBt.setOnClickListener {
+            var i = Intent(this, PageViewActivity::class.java)
+            startActivity(i)
+        }
+
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
