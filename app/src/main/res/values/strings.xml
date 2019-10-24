@@ -18,4 +18,5 @@
     <string name="anterior">ANTERIOR</string>
     <string name="list_view">List View</string>
     <string name="recycler_view">RECYCLER VIEW</string>
+    <string name="swipe_e_dragdrop">SWIPE E DRAGDROP</string>
 </resources>
