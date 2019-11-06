@@ -41,6 +41,11 @@ class MainActivity : AppCompatActivity() {
              startActivity(i)
          }
 
+        gridViewBt.setOnClickListener {
+            var i = Intent(this, GridViewActivity::class.java)
+            startActivity(i)
+        }
+
          recyclerViewBt.setOnClickListener {
              var i = Intent(this, RecyclerViewActivity::class.java)
              startActivity(i)

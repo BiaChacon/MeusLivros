@@ -20,4 +20,5 @@
     <string name="recycler_view">RECYCLER VIEW</string>
     <string name="pageview">PAGE VIEW</string>
     <string name="swipe_e_dragdrop">SWIPE E DRAGDROP</string>
+    <string name="gridview">GridView</string>
 </resources>
